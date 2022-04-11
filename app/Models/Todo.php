@@ -8,4 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class Todo extends Model
 {
     use HasFactory;
+    /**
+     * @var array
+     */
+    protected $fillable = ['title', 'content'];
+    /**
+     * @var array
+     */
+    protected $dates = ['created_at', 'updated_at'];
 }
